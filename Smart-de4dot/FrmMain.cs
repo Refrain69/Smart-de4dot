@@ -108,7 +108,7 @@ public partial class FrmMain : Form
         var de4dot64Path = Path.Combine(path, "de4dot-x64.exe");
         if (chk64.Checked && !File.Exists(de4dot64Path))
         {
-            MessageBox.Show("de4dot-x64.exe not found, exiting...", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //MessageBox.Show("de4dot-x64.exe not found, exiting...", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             chk64.Checked = false;
             return;
         }
